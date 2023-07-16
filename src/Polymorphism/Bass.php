@@ -2,9 +2,7 @@
 
 namespace App\Polymorphism;
 
-use App\Inheritance\StringInstruments;
-
-class Bass extends StringInstruments implements PlayTemplate
+class Bass extends StringInstruments
 {
     public function __construct(string $color, bool $electric)
     {

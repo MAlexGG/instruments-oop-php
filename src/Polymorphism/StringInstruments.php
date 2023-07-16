@@ -2,7 +2,7 @@
 
 namespace App\Polymorphism;
 
-abstract class StringInstruments
+abstract class StringInstruments implements PlayTemplate
 {
     protected int $strings;
     private string $color;
@@ -32,5 +32,10 @@ abstract class StringInstruments
     public function getElectric()
     {
         return $this->electric;
+    }
+
+    public function startPlaying(PlayTemplate $playTemplate)
+    {
+        return $playTemplate->play();
     }
 }

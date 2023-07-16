@@ -10,6 +10,7 @@ class GuitarTest extends TestCase
     public function testIfGuitarHas6Strings()
     {
         $guitar = new Guitar('black', true);
+        //sut system under test
         $sut = $guitar->strings;
         $this->assertEquals(6, $sut);
     }

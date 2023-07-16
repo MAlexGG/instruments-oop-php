@@ -34,5 +34,6 @@ abstract class StringInstruments
         return $this->electric;
     }
 
+    //polimorfismo por herencia
     public abstract function play();
 }

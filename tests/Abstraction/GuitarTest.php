@@ -22,6 +22,14 @@ class GuitarTest extends TestCase
         $this->assertEquals('black', $sut);
     }
 
+    public function testIfGuitarCanChangeColor()
+    {
+       $guitar = new Guitar('black', true);
+       $guitar->color = 'red';
+       $sut =  $guitar->color;
+       $this->assertEquals('red', $sut);
+    }
+
     public function testIfGuitarIsElectric()
     {
         $guitar = new Guitar('black', true);

@@ -23,4 +23,3 @@ It was developed with php, for testing PHPUnit.
 - Required PHPUnit v. 9.5
 - git clone <repository>
 - composer i
-- xampp

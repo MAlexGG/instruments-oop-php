@@ -2,7 +2,7 @@
 
 namespace App\Polymorphism;
 
-interface PlayTemplate
+interface PlayInterface
 {
     public function play();
 }
